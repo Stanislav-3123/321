@@ -6,7 +6,7 @@ function App() {
 		<BrowserRouter>
 			<div className="container pt-4">
 				<Switch>
-					<Route />
+					<Route  />
 				</Switch>
 			</div>
 		</BrowserRouter>

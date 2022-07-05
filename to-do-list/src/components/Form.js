@@ -2,7 +2,7 @@ import React from "react";
 
 const Form = () => {
 	return (
-		<Form>
+		<form>
 			<div className="form-group">
 				<input
 					type="text"
@@ -10,7 +10,7 @@ const Form = () => {
 					placeholder="Введите название заметки"
 				/>
 			</div>
-		</Form>
+		</form>
 	)
 }
 

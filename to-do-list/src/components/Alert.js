@@ -1,7 +1,9 @@
+import { useContext } from "react";
 import React from "react";
+import AlertContext from "../context/alert/alertContext";
 
-const Alert = ({alert}) => {
-
+const Alert = () => {
+const {alert, hide} = useContext(AlertContext)
   if (!alert) {
 	return null
   }
@@ -10,7 +12,7 @@ const Alert = ({alert}) => {
 		<div class={`alert alert-${alert.type} || 'warning'} alert-dismissible`}>
 			<strong>Внимание!</strong>
 			{alert.text}
-			<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			<button onClick={hide} type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 		</div>
 	)
 }

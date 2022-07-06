@@ -1,6 +1,7 @@
-import React from "react";
-
+import React, {useState, useContext} from "react";
+const initialState = ''
 const Form = () => {
+	const [] = useState(initialState)
 	return (
 		<form>
 			<div className="form-group">
